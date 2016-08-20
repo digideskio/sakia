@@ -12,8 +12,11 @@ env:
 
 before_install:
 - ci/travis/before_install.sh
+- ci/travis/before_script.sh
 install:
 - ci/travis/build.sh
+before_script:
+- ci/travis/before_script.sh
 script:
 - ci/travis/test.sh
 after_success:
