@@ -11,7 +11,6 @@ env:
 - PYENV_PYTHON_VERSION=3.5.2
 
 before_install:
-- ci/travis/before_script.sh
 - ci/travis/before_install.sh
 install:
 - ci/travis/build.sh
